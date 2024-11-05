@@ -1,0 +1,18 @@
+[
+  {
+    "id": "4f81079a-22e4-4e8d-8c68-34241a5e106c",
+    "username": "admin",
+    "hash": "0ce18c1ac7bd0ed6479c4502177874853b059379107b652300f08e3654d20873dbb9bd14d1c2fb8a4a1162eca7d4d1fdf968007018649316fb1e7601b3d64f5f",
+    "salt": "4ce17ec495973cf41e0ece9fe99aa140",
+    "role": "admin",
+    "createdAt": "2024-11-03T18:21:00.375Z"
+  },
+  {
+    "id": "b41e3bf3-533a-42f1-abf4-b737ee1c015b",
+    "username": "nafis",
+    "hash": "ebd22cba7ef227c066ae75737c654c14fe3f93c972278b00304346a004ced33cec9bd7893f18ef2419fdc774ebbe9fe74040dd0b021ee70e9fed4e3ea0c397aa",
+    "salt": "b0b0ee07949fbd0dea692e9689a9fbc1",
+    "role": "user",
+    "createdAt": "2024-11-03T19:03:27.212Z"
+  }
+]

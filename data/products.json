@@ -1,0 +1,23 @@
+[
+  {
+    "id": "47ce4d09-92bb-4b13-8e49-ec08af9ea53a",
+    "name": "Macbook Pro",
+    "price": 99.99,
+    "category": "electronics",
+    "createdAt": "2024-11-05T14:28:43.669Z"
+  },
+  {
+    "id": "9054f0dc-f41f-460b-be50-8c8d366bbb12",
+    "name": "Product 2",
+    "price": 99.99,
+    "category": "mobile",
+    "createdAt": "2024-11-05T14:28:51.896Z"
+  },
+  {
+    "id": "08d2f83b-9c23-465a-8da7-94b40d8408d7",
+    "name": "Product 3",
+    "price": 99.99,
+    "category": "mobile",
+    "createdAt": "2024-11-05T14:28:55.999Z"
+  }
+]
