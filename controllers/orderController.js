@@ -1,4 +1,4 @@
-const OrderModel = require('../models/orderModel');
+const OrderModel = require("../models/orderModel");
 
 class OrderController {
     static async create(req, res) {
@@ -18,19 +18,19 @@ class OrderController {
 
     static async getById(req, res) {
         try {
-            const id = req.path.split('/')[2];
+            const id = req.path.split("/")[2];
             const order = await OrderModel.getById(id);
             
             if (!order) {
                 res.statusCode = 404;
-                res.end(JSON.stringify({ error: 'Order not found' }));
+                res.end(JSON.stringify({ error: "Order not found" }));
                 return;
             }
             
             // Check if user is admin or order owner
             if (req.user.role !== 'admin' && order.userId !== req.user.id) {
                 res.statusCode = 403;
-                res.end(JSON.stringify({ error: 'Unauthorized' }));
+                res.end(JSON.stringify({ error: "Unauthorized" }));
                 return;
             }
             
@@ -43,12 +43,12 @@ class OrderController {
 
     static async update(req, res) {
         try {
-            const id = req.path.split('/')[2];
+            const id = req.path.split("/")[2];
             const order = await OrderModel.update(id, req.body);
             
             if (!order) {
                 res.statusCode = 404;
-                res.end(JSON.stringify({ error: 'Order not found' }));
+                res.end(JSON.stringify({ error: "Order not found" }));
                 return;
             }
             
@@ -61,7 +61,7 @@ class OrderController {
 
     static async delete(req, res) {
         try {
-            const id = req.path.split('/')[2];
+            const id = req.path.split("/")[2];
             await OrderModel.delete(id);
             res.statusCode = 204;
             res.end();
