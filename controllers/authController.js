@@ -1,5 +1,5 @@
-const UserModel = require('../models/userModel');
-const { generateToken } = require('../utils/jwt');
+const UserModel = require("../models/userModel");
+const { generateToken } = require("../utils/jwt");
 
 class AuthController {
     static async register(req, res) {
@@ -20,13 +20,13 @@ class AuthController {
             
             if (!user) {
                 res.statusCode = 401;
-                res.end(JSON.stringify({ error: 'Invalid credentials' }));
+                res.end(JSON.stringify({ error: "Invalid credentials" }));
                 return;
             }
 
             const token = generateToken(user);
             res.end(JSON.stringify({
-                status: 'success',
+                status: "success",
                 data: {
                     token,
                     user
