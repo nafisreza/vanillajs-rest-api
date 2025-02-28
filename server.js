@@ -6,11 +6,6 @@ const PORT = 3000;
 
 const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    
-    // Parse URL and query parameters
-    const parsedUrl = url.parse(req.url, true);
-    req.query = parsedUrl.query;
-    req.path = parsedUrl.pathname;
 
     // Collect request body
     let body = '';
