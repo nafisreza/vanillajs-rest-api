@@ -2,7 +2,7 @@ const http = require('http');
 const url = require('url');
 const { handleRoutes } = require('./routes/index');
 
-const PORT = 3000;
+const PORT = 3000
 
 const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'application/json');
