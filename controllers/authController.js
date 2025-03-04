@@ -1,17 +1,7 @@
 const UserModel = require("../models/userModel");
 const { generateToken } = require("../utils/jwt");
 
-class AuthController {
-    static async register(req, res) {
-        try {
-            const user = await UserModel.create(req.body);
-            res.statusCode = 201;
-            res.end(JSON.stringify(user));
-        } catch (error) {
-            res.statusCode = 400;
-            res.end(JSON.stringify({ error: error.message }));
-        }
-    }
+
 
     static async login(req, res) {
         try {
