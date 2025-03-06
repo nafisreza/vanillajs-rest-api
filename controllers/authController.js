@@ -20,6 +20,7 @@ class AuthController {
             res.statusCode = 400;
         
             res.end(JSON.stringify({ error: error.message }));
+            
         }
     
     }
