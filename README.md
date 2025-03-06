@@ -183,4 +183,4 @@ To view the leaderboard, send a GET request to `/leaderboard`.
 
 ## Developers
 
-The QuizMasterAPI project is developed and maintained by [@codenim34](https://github.com/codenim34), [@takitajwar17](https://github.com/takitajwar17) & [@imtiaz-risat](https://github.com/imtiaz-risat).
+The QuizMasterAPI project is developed and maintained by 
