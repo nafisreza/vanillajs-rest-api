@@ -46,13 +46,13 @@ The E-Commerce REST API adopts the **Model-View-Controller (MVC) design pattern*
 - **Others:**
   - node_modules (dependencies folder), package-lock.json, package.json, server.js
 
-## Installation and How To Use QuizMasterAPI
+## Installation and How To Use E-Commerce Rest API
 
 ### Prerequisites:
 
 Before you begin, make sure you have the following installed on your machine:
 
-1. **Node.js:** The QuizMasterAPI is built using Node.js. Download and install it from [https://nodejs.org/](https://nodejs.org/).
+1. **Node.js:** The E-Commerce Rest API is built using Node.js. Download and install it from [https://nodejs.org/](https://nodejs.org/).
 
 2. **Git:** You'll need Git to clone the repository. Install it from [https://git-scm.com/](https://git-scm.com/).
 
@@ -82,11 +82,11 @@ Use npm (Node Package Manager) to install the required dependencies:
 npm install
 ```
 
-### Running the QuizMasterAPI:
+### Running the E-Commerce Rest API:
 
 #### 1. Start the server:
 
-Run the following command to start the QuizMasterAPI server:
+Run the following command to start the E-Commerce Rest API server:
 
 ```bash
 npm start
@@ -96,7 +96,7 @@ This command will launch the server, and you should see output indicating that t
 
 #### 2. Access the API:
 
-You can access the API at `http://localhost:3000` by default. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to interact with the QuizMasterAPI.
+You can access the API at `http://localhost:3000` by default. Open your web browser and navigate to [http://localhost:3000](http://localhost:3000) to interact with the E-Commerce Rest API.
 
 ### Recommended IDEs:
 
@@ -110,8 +110,7 @@ While you can use any text editor for working with Node.js projects, here are so
 
 ### API Testing:
 
-You can test the endpoints with this Postman Collection: [QuizMasterAPI-Postman-Collection](https://www.postman.com/xtradrill/workspace/xtradrill-workspace/collection/28299228-c896b7bc-aea8-44e3-a466-708cf9991eae).
-
+You can test the endpoints with this Postman Collection: [E-Commerce Rest API-Postman-Collection](https://www.postman.com/xtradrill/workspace/xtradrill-workspace/collection/28299228-c896b7bc-aea8-44e3-a466-708cf9991eae).
 
 
 ## Usage
