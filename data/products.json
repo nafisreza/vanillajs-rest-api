@@ -19,5 +19,12 @@
     "price": 99.99,
     "category": "mobile",
     "createdAt": "2024-11-05T14:28:55.999Z"
+  },
+  {
+    "id": "b7a1c2e9-4f3a-4532-9f9f-3c67d1d02a1e",
+    "name": "Product 4",
+    "price": 149.99,
+    "category": "laptop",
+    "createdAt": "2025-03-06T12:45:00.000Z"
   }
 ]
