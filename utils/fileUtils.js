@@ -1,5 +1,7 @@
+// Import the 'fs' module with promises for asynchronous file operations
 const fs = require('fs').promises;
 
+// Import the 'path' module to handle and transform file paths
 const path = require('path');
 
 const readJsonFile = async (filename) => {
