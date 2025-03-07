@@ -6,7 +6,7 @@ Welcome to the E-Commerce Rest API, a simple Node.js-based API that allows users
 
 ## Project Context
 
-This project is developed by our team, [Dijastra](#developers), for the Software Project Lab (SWE 4304) during the 3rd semester at the Islamic University of Technology. It represents one of the initial projects undertaken by our team during the early stages of our academic journey.
+This project is developed by our team, [Dijkstra](#developers), for the Software Project Lab (SWE 4304) during the 3rd semester at the Islamic University of Technology. It represents one of the initial projects undertaken by our team during the early stages of our academic journey.
 
 ## Table of Contents
 
@@ -22,26 +22,32 @@ This project is developed by our team, [Dijastra](#developers), for the Software
 
 The E-Commerce REST API adopts the **Model-View-Controller (MVC) design pattern**, a widely employed architectural principle in software development. This pattern partitions the application into three cohesive elements:
 
-***Model:*** Manages data handling and encapsulates the core business logic of the application.
+***model:*** Manages data handling and encapsulates the core business logic of the application.
 
-***View:*** Concerned with the presentation layer and the user interface, ensuring that data is displayed appropriately to users.
+***middleware:*** Concerned with the presentation layer and the user interface, ensuring that data is displayed appropriately to users.
 
-***Controller:*** Acts as an intermediary, processing user inputs, modifying the model as necessary, and updating the view accordingly.
+***routes:*** Acts as an intermediary, processing user inputs, modifying the model as necessary, and updating the view accordingly.
+
 
 #### The E-Commerce Rest API project is organized as follows:
 
-- **Model:**
-  - adminModel.js, quizModel.js, userModel.js
+- **model:**
+  - orderModel.js, productModel.js, userModel.js
 
-- **View:**
-  - adminView.js, quizView.js, userView.js
+- **middleware:**
+  - auth.js, roleCheck.js
 
-- **Controller:**
-  - adminController.js, userController.js
+- **routes:**
+  - index.js
 
-- **Database:**
-  - admins.json, users.json, chemistry.json, english.json, math.json, physics.json, quiz.json, leaderboard.json, mistakes.json
+- **utils:**
+  - fileUtils.js, jwt.js
 
+- **controller:**
+  - authController.js, orderController.js , productController.js
+
+- **data:**
+  - orders.json, products.json, users.json
 
 - **Others:**
   - node_modules (dependencies folder), package-lock.json, package.json, server.js
@@ -63,7 +69,7 @@ Before you begin, make sure you have the following installed on your machine:
 Open your terminal (Command Prompt, PowerShell, or Terminal) and run the following command to clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/codenim34/QuizMasterApi.git
+git clone https://github.com/nafisreza/vanillajs-rest-api.git
 ```
 
 #### 2. Navigate to the project directory:
@@ -71,7 +77,7 @@ git clone https://github.com/codenim34/QuizMasterApi.git
 Move into the project directory using the `cd` command:
 
 ```bash
-cd QuizMasterApi
+cd vanillajs-rest-api
 ```
 
 #### 3. Install project dependencies:
@@ -110,7 +116,7 @@ While you can use any text editor for working with Node.js projects, here are so
 
 ### API Testing:
 
-You can test the endpoints with this Postman Collection: [E-Commerce Rest API-Postman-Collection](https://www.postman.com/xtradrill/workspace/xtradrill-workspace/collection/28299228-c896b7bc-aea8-44e3-a466-708cf9991eae).
+You can test the endpoints with this Postman Collection: [E-Commerce Rest API-Postman-Collection]
 
 
 ## Usage

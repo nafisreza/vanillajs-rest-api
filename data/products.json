@@ -1,30 +1,58 @@
 [
   {
     "id": "47ce4d09-92bb-4b13-8e49-ec08af9ea53a",
-    "name": "Macbook Pro",
-    "price": 99.99,
-    "category": "electronics",
+    "name": "Mac Book Air",
+    "price": "1499.99",
+    "category": "Laptop",
     "createdAt": "2024-11-05T14:28:43.669Z"
   },
   {
     "id": "9054f0dc-f41f-460b-be50-8c8d366bbb12",
-    "name": "Product 2",
-    "price": 99.99,
-    "category": "mobile",
+    "name": "Lenovo Thinkpad Yoga",
+    "price": "1999.99",
+    "category": "Laptop",
     "createdAt": "2024-11-05T14:28:51.896Z"
   },
   {
     "id": "08d2f83b-9c23-465a-8da7-94b40d8408d7",
-    "name": "Product 3",
-    "price": 99.99,
-    "category": "mobile",
+    "name": "Hp Pavilion",
+    "price": 899.99,
+    "category": "Laptop",
     "createdAt": "2024-11-05T14:28:55.999Z"
   },
   {
     "id": "b7a1c2e9-4f3a-4532-9f9f-3c67d1d02a1e",
-    "name": "Product 4",
-    "price": 149.99,
-    "category": "laptop",
+    "name": "Dell Inspiron",
+    "price": 1479.99,
+    "category": "Laptop",
     "createdAt": "2025-03-06T12:45:00.000Z"
+  },
+  {
+    "id": "50ae0214-1108-48b6-9b2b-f9434b98d871",
+    "name": "Iphone 16 Pro Max",
+    "price": 1999.99,
+    "category": "mobile",
+    "createdAt": "2025-03-07T05:04:57.123Z"
+  },
+  {
+    "id": "43a0317c-0988-4378-93bc-0c918c7512ef",
+    "name": "Samsung S25 ultra",
+    "price": 1299.99,
+    "category": "mobile",
+    "createdAt": "2025-03-07T05:05:35.516Z"
+  },
+  {
+    "id": "db861b47-dee1-4f4a-bb6e-f81cc236960a",
+    "name": "Samsung S24 ultra",
+    "price": 1199.99,
+    "category": "mobile",
+    "createdAt": "2025-03-07T05:05:58.466Z"
+  },
+  {
+    "id": "95a23fd4-2f5f-4a42-8368-d0258d5d0996",
+    "name": "Iphone 14 Pro Max",
+    "price": 999.99,
+    "category": "mobile",
+    "createdAt": "2025-03-07T05:07:06.808Z"
   }
 ]
