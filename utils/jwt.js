@@ -25,7 +25,7 @@ const generateToken = (payload) => {
 
 };
 
-// Function to verify a JWT and extract its payload
+// Function to verify a JWT and extract its  payload
 const verifyToken = (token) => {
 
     // Split the token into its three parts: header, content, and signature
