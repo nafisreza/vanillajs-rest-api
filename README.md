@@ -6,7 +6,7 @@ Welcome to the E-Commerce Rest API, a simple Node.js-based API that allows users
 
 ## Project Context
 
-This project is developed by our team, [Dijastra](#developers), for the Software Project Lab (SWE 4304) during the 3rd semester at the Islamic University of Technology. It represents one of the initial projects undertaken by our team during the early stages of our academic journey.
+This project is developed by our team, [Dijkstra](#developers), for the Software Project Lab (SWE 4304) during the 3rd semester at the Islamic University of Technology. It represents one of the initial projects undertaken by our team during the early stages of our academic journey.
 
 ## Table of Contents
 
@@ -30,18 +30,23 @@ The E-Commerce REST API adopts the **Model-View-Controller (MVC) design pattern*
 
 #### The E-Commerce Rest API project is organized as follows:
 
-- **Model:**
-  - adminModel.js, quizModel.js, userModel.js
+- **model:**
+  - orderModel.js, productModel.js, userModel.js
 
-- **View:**
-  - adminView.js, quizView.js, userView.js
+- **middleware:**
+  - auth.js, roleCheck.js
 
-- **Controller:**
-  - adminController.js, userController.js
+- **routes:**
+  - index.js
 
-- **Database:**
-  - admins.json, users.json, chemistry.json, english.json, math.json, physics.json, quiz.json, leaderboard.json, mistakes.json
+- **utils:**
+  - fileUtils.js, jwt.js
 
+- **controller:**
+  - authController.js, orderController.js , productController.js
+
+- **data:**
+  - orders.json, products.json, users.json
 
 - **Others:**
   - node_modules (dependencies folder), package-lock.json, package.json, server.js
