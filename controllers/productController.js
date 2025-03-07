@@ -6,7 +6,7 @@ class ProductController {
     
         try {
     
-            const products = await ProductModel.getAll(req.query.filter);
+            const products = await ProductModel.getAll(req.query.filter)
     
             res.end(JSON.stringify(products));
     
