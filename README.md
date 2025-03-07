@@ -116,7 +116,7 @@ While you can use any text editor for working with Node.js projects, here are so
 
 ### API Testing:
 
-You can test the endpoints with this Postman Collection: [E-Commerce Rest API-Postman-Collection](https://www.postman.com/xtradrill/workspace/xtradrill-workspace/collection/28299228-c896b7bc-aea8-44e3-a466-708cf9991eae).
+You can test the endpoints with this Postman Collection: [E-Commerce Rest API-Postman-Collection]
 
 
 ## Usage
