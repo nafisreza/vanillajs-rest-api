@@ -22,11 +22,12 @@ This project is developed by our team, [Dijkstra](#developers), for the Software
 
 The E-Commerce REST API adopts the **Model-View-Controller (MVC) design pattern**, a widely employed architectural principle in software development. This pattern partitions the application into three cohesive elements:
 
-***Model:*** Manages data handling and encapsulates the core business logic of the application.
+***model:*** Manages data handling and encapsulates the core business logic of the application.
 
-***View:*** Concerned with the presentation layer and the user interface, ensuring that data is displayed appropriately to users.
+***middleware:*** Concerned with the presentation layer and the user interface, ensuring that data is displayed appropriately to users.
 
-***Controller:*** Acts as an intermediary, processing user inputs, modifying the model as necessary, and updating the view accordingly.
+***routes:*** Acts as an intermediary, processing user inputs, modifying the model as necessary, and updating the view accordingly.
+
 
 #### The E-Commerce Rest API project is organized as follows:
 
@@ -68,7 +69,7 @@ Before you begin, make sure you have the following installed on your machine:
 Open your terminal (Command Prompt, PowerShell, or Terminal) and run the following command to clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/codenim34/QuizMasterApi.git
+git clone https://github.com/nafisreza/vanillajs-rest-api.git
 ```
 
 #### 2. Navigate to the project directory:
@@ -76,7 +77,7 @@ git clone https://github.com/codenim34/QuizMasterApi.git
 Move into the project directory using the `cd` command:
 
 ```bash
-cd QuizMasterApi
+cd vanillajs-rest-api
 ```
 
 #### 3. Install project dependencies:
