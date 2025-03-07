@@ -11,7 +11,7 @@ const { handleRoutes } = require('./routes/index');
 const PORT = 3000;
 
 // Create an HTTP server
-const server =http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
 
     // Setting the response header to indicate that the content type will be JSON
     res.setHeader('Content-Type', 'application/json');
@@ -36,7 +36,7 @@ const server =http.createServer((req, res) => {
     
     });
 
-    // Listen for the 'end' event, which is emitted when the entire request body has been received
+    // Listen for the end event, which is emitted when the entire request body has been received
     req.on('end', () => {
         // If there is a body, parse it as JSON and attach it to the request object
         if (body) {
