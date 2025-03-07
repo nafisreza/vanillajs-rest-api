@@ -25,23 +25,30 @@ const generateToken = (payload) => {
 
 };
 
+// Function to verify a JWT and extract its payload
 const verifyToken = (token) => {
 
+    // Split the token into its three parts: header, content, and signature
     const [header, content, signature] = token.split('.');
 
+    // Recreate the signature using the same method as in generateToken
     const expectedSignature = crypto
-        .createHmac('sha256', SECRET_KEY)
-        .update(`${header}.${content}`)
-        .digest('base64');
+        .createHmac('sha256', SECRET_KEY) // Use HMAC with SHA-256 and the secret key
+        .update(`${header}.${content}`) // Hash the combined header and content
+        .digest('base64'); // Encode the hash as a base64 string
 
+    // Compare the recreated signature with the provided signature
     if (signature !== expectedSignature) {
 
+        // If they don't match, throw an error (invalid token)
         throw new Error('Invalid token');
 
     }
 
+    // If the signature is valid, decode the content (payload) and return it as an object
     return JSON.parse(Buffer.from(content, 'base64').toString());
 
 };
 
+// Export the functions for use in other modules
 module.exports = { generateToken, verifyToken }; 
