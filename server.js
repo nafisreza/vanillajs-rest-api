@@ -11,7 +11,7 @@ const { handleRoutes } = require('./routes/index');
 const PORT = 3000;
 
 // Create an HTTP server
-const server =http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
 
     // Setting the response header to indicate that the content type will be JSON
     res.setHeader('Content-Type', 'application/json');
