@@ -131,24 +131,6 @@ To register a new user, send a POST request to `/register` with the user's infor
 
 To log in as a user, send a POST request to `/login` with the user's credentials in the request body. Successful login returns an access token.
 
-#### 3. Take Quiz
-
-1. Get 10 random quizzes: Send a GET request to `/user/takeQuiz`.
-2. Get 10 random quizzes for a specific subject (e.g., physics): Send a GET request to `/user/takeQuiz/physics`.
-3. Submit Quiz: Send a POST request to `/user/submitQuiz` with the user's quiz responses.
-
-#### 4. View Mistaken Questions
-
-To view randomly fetched mistaken questions, send a GET request to `/user/mistakes`.
-
-#### 5. View Quiz History
-
-To view the quiz history, send a GET request to `/user/quizhistory`.
-
-#### 6. View Leaderboard
-
-To view the leaderboard, send a GET request to `/leaderboard`.
-
 ### Admin Operations
 
 #### 1. Admin Registration
@@ -159,13 +141,6 @@ To register a new admin, send a POST request to `/admin/register` with the admin
 
 To log in as an admin, send a POST request to `/admin/login` with the admin's credentials in the request body. Successful login returns an access token.
 
-#### 3. Add Quiz
-
-To add a quiz for a specific subject (e.g., physics), send a POST request to `/admin/addQuiz/physics` with the quiz details in the request body. Admin authentication is required.
-
-#### 4. View Leaderboard
-
-To view the leaderboard, send a GET request to `/leaderboard`.
 
 ## Endpoints
 
