@@ -54,5 +54,12 @@
     "price": 999.99,
     "category": "mobile",
     "createdAt": "2025-03-07T05:07:06.808Z"
+  },
+  {
+    "id": "f3e2d1c0-b4a5-6789-0123-abcdef987654",
+    "name": "Vivo X100 Pro",
+    "price": 899.99,
+    "category": "mobile",
+    "createdAt": "2025-03-08T12:30:45.250Z"
   }
 ]
