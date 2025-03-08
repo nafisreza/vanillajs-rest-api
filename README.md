@@ -131,6 +131,7 @@ To register a new user, send a POST request to `/register` with the user's infor
 
 To log in as a user, send a POST request to `/login` with the user's credentials in the request body. Successful login returns an access token.
 
+
 ### Admin Operations
 
 #### 1. Admin Registration
@@ -142,26 +143,6 @@ To register a new admin, send a POST request to `/admin/register` with the admin
 To log in as an admin, send a POST request to `/admin/login` with the admin's credentials in the request body. Successful login returns an access token.
 
 
-## Endpoints
-
-1. **User Endpoints:**
-    - `POST /register`: User registration.
-    - `POST /login`: User login.
-    - `GET /user/takeQuiz`: Get 10 random quizzes.
-    - `GET /user/takeQuiz/{subject}`: Get 10 random quizzes for a specific subject.
-    - `POST /user/submitQuiz`: Submit a quiz.
-    - `GET /user/mistakes`: View mistaken questions.
-    - `GET /user/quizhistory`: View quiz history.
-    - `GET /leaderboard`: View the leaderboard.
-    
-
-2. **Admin Endpoints:**
-    - `POST /admin/register`: Admin registration.
-    - `POST /admin/login`: Admin login.
-    - `POST /admin/addQuiz/{subject}`: Add a quiz for a specific subject.
-    - `GET /leaderboard`: View the leaderboard.
 
 
-## Developers
 
-The QuizMasterAPI project is developed and maintained by 
