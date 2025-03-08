@@ -64,6 +64,24 @@ class OrderController {
     }
 
     /**
+     * Get all orders placed by the authenticated user
+     */
+    static async getAllByUser(req, res) {
+        try {
+            // Fetch all orders for the authenticated user
+            const orders = await OrderModel.getAllByUserId(req.user.id);
+            
+            // Send the orders data as JSON response
+            res.end(JSON.stringify(orders));
+        }
+        catch (error) {
+            // Handle server errors
+            res.statusCode = 500;
+            res.end(JSON.stringify({ error: error.message }));
+        }
+    }
+
+    /**
      * Update an existing order
      */
     static async update(req, res) {

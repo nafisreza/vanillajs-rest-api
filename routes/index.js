@@ -25,7 +25,8 @@ const routes = {
     'POST:/orders': [authMiddleware, OrderController.create],
     'GET:/orders/:id': [authMiddleware, OrderController.getById],
     'PATCH:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.update],
-    'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete]
+    'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete],
+    'GET:/orders': [authMiddleware, OrderController.getAllByUser]
 };
 
 const handleRoutes = async (req, res) => {
