@@ -16,6 +16,7 @@ const routes = {
     
     'GET:/products': ProductController.getAll,
     'GET:/products/:id': ProductController.getById,
+    'GET:/hello-world': ProductController.helloWorld,
 
     'POST:/products': [authMiddleware, checkRole('admin'), ProductController.create],
     
