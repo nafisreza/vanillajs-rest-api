@@ -17,6 +17,6 @@ jobs:
         echo "${{ secrets.SSH_TOKEN}}" > ~/.ssh/id_rsa
         ssh-keyscan -H ${{ secrets.PUBLIC_IP}} > ~/.ssh/known_hosts
     - name: connect and pull
-      run: ssh ubuntu@${{ secrets.PUBLIC_IP }} "cd /home/ubuntu/ && git checkout main && /home/ubuntu/deploy.sh"
+      run: ssh ubuntu@${{ secrets.PUBLIC_IP }} "cd /home/ubuntu/ && /home/ubuntu/deploy.sh"
     - name: cleanup
       run: rm -rf ~/.ssh/id_rsa
