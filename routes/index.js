@@ -12,6 +12,7 @@ const routes = {
 
     'POST:/register': AuthController.register,
     'POST:/login': AuthController.login,
+    'POST:/logout': [authMiddleware, AuthController.logout],
     
     'GET:/products': ProductController.getAll,
     'GET:/products/:id': ProductController.getById,
