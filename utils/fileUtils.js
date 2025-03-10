@@ -55,8 +55,8 @@ const writeJsonFile = async (filename, data) => {
 
 module.exports = {
 
-    readJsonFile,
+    readJsonFile,// exporting the readJsonFile function
 
-    writeJsonFile
+    writeJsonFile// exporting the writeJsonFile function
 
 }; 
