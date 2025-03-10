@@ -56,10 +56,18 @@
     "createdAt": "2025-03-07T05:07:06.808Z"
   },
   {
+
     "id": "01756bad-4e71-48e1-ba17-f80802879169",
     "name": "Head messager",
     "price": 19.99,
     "category": "Comfort",
     "createdAt": "2025-03-07T05:57:09.529Z"
+  },
+  {
+    "id": "f3e2d1c0-b4a5-6789-0123-abcdef987654",
+    "name": "Vivo X100 Pro",
+    "price": 899.99,
+    "category": "Laptop",
+    "createdAt": "2025-03-08T12:30:45.250Z"
   }
 ]

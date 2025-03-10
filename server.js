@@ -8,7 +8,7 @@ const url = require('url');
 const { handleRoutes } = require('./routes/index');
 
 // Defining the port on which the server will listen
-const PORT = 3000;
+const PORT = 3000
 
 // Create an HTTP server
 const server = http.createServer((req, res) => {

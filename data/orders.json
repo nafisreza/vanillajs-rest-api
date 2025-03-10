@@ -1,1 +1,22 @@
-[] 
+[
+  {
+    "id": "289c2d29-d055-49a5-a08b-c7758e542db9",
+    "products": [
+      {
+        "productId": "95a23fd4-2f5f-4a42-8368-d0258d5d0996",
+        "quantity": 2
+      }
+    ],
+    "shippingAddress": {
+      "street": "123 Main St",
+      "city": "Gazipur",
+      "state": "Dhaka",
+      "zipCode": "1216",
+      "country": "Bangladesh"
+    },
+    "paymentMethod": "credit_card",
+    "userId": "b41e3bf3-533a-42f1-abf4-b737ee1c015b",
+    "status": "pending",
+    "createdAt": "2025-03-08T22:03:15.580Z"
+  }
+]

@@ -67,6 +67,18 @@ class AuthController {
     
     }
 
+    static async logout(req, res) {
+        try {
+            // Step 1 - Invalidate the token on frontend
+            // Step 2 - send a success response
+            res.end(JSON.stringify({ status: "success", message: "Logged out successfully" }));
+        }
+        catch (error) {
+            res.statusCode = 500;
+            res.end(JSON.stringify({ error: error.message }));
+        }
+    }
+
 }
 
 module.exports = AuthController;

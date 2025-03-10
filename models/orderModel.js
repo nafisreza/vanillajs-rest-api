@@ -56,6 +56,11 @@ class OrderModel {
     
     }
 
+    static async getAllByUserId(userId) {
+        const orders = await readJsonFile('orders.json');
+        return orders.filter(o => o.userId === userId);
+    }
+
 }
 
-module.exports = OrderModel; 
+module.exports = OrderModel;
