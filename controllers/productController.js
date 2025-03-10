@@ -6,7 +6,7 @@ class ProductController {
     
         try {
     
-            const products = await ProductModel.getAll(req.query.filter);
+            const products = await ProductModel.getAll(req.query.filter)
     
             res.end(JSON.stringify(products));
     
@@ -19,6 +19,11 @@ class ProductController {
         
         }
     
+    }
+
+    static async helloWorld(req, res) {
+            
+        res.end('Hello, World!');
     }
 
     static async getById(req, res) {

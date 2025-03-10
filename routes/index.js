@@ -42,6 +42,26 @@ const routes = {
     'PATCH:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.update], // Route to update an order (admin-only)
     'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete] // Route to delete an order (admin-only)
 
+    'POST:/register': AuthController.register,
+    'POST:/login': AuthController.login,
+    'POST:/logout': [authMiddleware, AuthController.logout],
+    
+    'GET:/products': ProductController.getAll,
+    'GET:/products/:id': ProductController.getById,
+    'GET:/hello-world': ProductController.helloWorld,
+
+    'POST:/products': [authMiddleware, checkRole('admin'), ProductController.create],
+    
+    'PATCH:/products/:id': [authMiddleware, checkRole('admin'), ProductController.update],
+    
+    'DELETE:/products/:id': [authMiddleware, checkRole('admin'), ProductController.delete],
+    
+    'POST:/orders': [authMiddleware, OrderController.create],
+    'GET:/orders/:id': [authMiddleware, OrderController.getById],
+    'PATCH:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.update],
+    'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete],
+    'GET:/orders': [authMiddleware, OrderController.getAllByUser]
+
 };
 
 // Function to handle incoming requests and route them to the appropriate handler
