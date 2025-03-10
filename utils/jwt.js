@@ -51,6 +51,7 @@ const verifyToken = (token) => {
 };
 
 // Export the functions for use in other modules
+
 module.exports = { 
     generateToken, // Exporting the generateToken function
     verifyToken  // Exporting the verifyToken function
