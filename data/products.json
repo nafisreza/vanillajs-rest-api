@@ -31,29 +31,37 @@
     "id": "50ae0214-1108-48b6-9b2b-f9434b98d871",
     "name": "Iphone 16 Pro Max",
     "price": 1999.99,
-    "category": "mobile",
+    "category": "Mobile",
     "createdAt": "2025-03-07T05:04:57.123Z"
   },
   {
     "id": "43a0317c-0988-4378-93bc-0c918c7512ef",
     "name": "Samsung S25 ultra",
     "price": 1299.99,
-    "category": "mobile",
+    "category": "Mobile",
     "createdAt": "2025-03-07T05:05:35.516Z"
   },
   {
     "id": "db861b47-dee1-4f4a-bb6e-f81cc236960a",
     "name": "Samsung S24 ultra",
     "price": 1199.99,
-    "category": "mobile",
+    "category": "Mobile",
     "createdAt": "2025-03-07T05:05:58.466Z"
   },
   {
     "id": "95a23fd4-2f5f-4a42-8368-d0258d5d0996",
     "name": "Iphone 14 Pro Max",
     "price": 999.99,
-    "category": "mobile",
+    "category": "Mobile",
     "createdAt": "2025-03-07T05:07:06.808Z"
+  },
+  {
+
+    "id": "01756bad-4e71-48e1-ba17-f80802879169",
+    "name": "Head messager",
+    "price": 19.99,
+    "category": "Comfort",
+    "createdAt": "2025-03-07T05:57:09.529Z"
   },
   {
     "id": "f3e2d1c0-b4a5-6789-0123-abcdef987654",
