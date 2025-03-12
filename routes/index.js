@@ -23,6 +23,7 @@ const routes = {
 
     'POST:/register': AuthController.register, // Route for user registration
     'POST:/login': AuthController.login, // Route for user login
+    'POST:/logout': [authMiddleware, AuthController.logout], // Route for user logout (protected by authMiddleware)
 
     // Product routes
 
@@ -40,28 +41,10 @@ const routes = {
     'POST:/orders': [authMiddleware, OrderController.create], // Route to create a new order (protected by authMiddleware)
     'GET:/orders/:id': [authMiddleware, OrderController.getById], // Route to get a specific order by ID (protected by authMiddleware)
     'PATCH:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.update], // Route to update an order (admin-only)
-    'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete] // Route to delete an order (admin-only)
+    'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete], // Route to delete an order (admin-only)
+    'GET:/orders': [authMiddleware, OrderController.getAllByUser], // Route to get all orders for a user (protected by authMiddleware)
 
-    'POST:/register': AuthController.register,
-    'POST:/login': AuthController.login,
-    'POST:/logout': [authMiddleware, AuthController.logout],
-    
-    'GET:/products': ProductController.getAll,
-    'GET:/products/:id': ProductController.getById,
-    'GET:/hello-world': ProductController.helloWorld,
-
-    'POST:/products': [authMiddleware, checkRole('admin'), ProductController.create],
-    
-    'PATCH:/products/:id': [authMiddleware, checkRole('admin'), ProductController.update],
-    
-    'DELETE:/products/:id': [authMiddleware, checkRole('admin'), ProductController.delete],
-    
-    'POST:/orders': [authMiddleware, OrderController.create],
-    'GET:/orders/:id': [authMiddleware, OrderController.getById],
-    'PATCH:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.update],
-    'DELETE:/orders/:id': [authMiddleware, checkRole('admin'), OrderController.delete],
-    'GET:/orders': [authMiddleware, OrderController.getAllByUser]
-
+    'GET:/hello-world': ProductController.helloWorld // Route for hello world
 };
 
 // Function to handle incoming requests and route them to the appropriate handler
