@@ -30,7 +30,11 @@ class UserModel {
         
         await writeJsonFile('users.json', users);
         
-        return { id: newUser.id, username: newUser.username, role: newUser.role };
+        return { 
+            id: newUser.id, 
+            username: newUser.username, 
+            role: newUser.role 
+        };
     
     }
 
@@ -41,7 +45,9 @@ class UserModel {
         const user = users.find(u => u.username === username);
         
         if (!user) {
+
             return null;
+            
         }
 
         const hash = crypto
