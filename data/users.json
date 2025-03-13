@@ -14,5 +14,13 @@
     "salt": "b0b0ee07949fbd0dea692e9689a9fbc1",
     "role": "user",
     "createdAt": "2024-11-03T19:03:27.212Z"
+  },
+  {
+    "id": "9b54105f-766b-45d6-9b81-04f70eb717dd",
+    "username": "admin1",
+    "hash": "9bb6347b927eceb55ec2298e4d9070b00a97f02d055c72d4143d5db2cfdc5a0be9b0cafc7a4434ae3c71cf18f31d186e92fd97e7e59133d4c649fe8dbf6f6a2d",
+    "salt": "415f645d044cc0d28bef3c66ef8d05eb",
+    "role": "admin",
+    "createdAt": "2025-03-13T05:38:46.247Z"
   }
 ]
