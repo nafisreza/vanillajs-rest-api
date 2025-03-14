@@ -124,16 +124,17 @@ class OrderController {
 
         }
         catch (error) {
-
+            
             res.statusCode = 500;
 
             res.end(JSON.stringify({ error: error.message }));
 
         }
-
+    
     }
 
 }
 
 // Export the OrderController class to be used in other parts of the application
+
 module.exports = OrderController;
