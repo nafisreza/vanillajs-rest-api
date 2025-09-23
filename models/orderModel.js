@@ -1,69 +1,60 @@
-const { readJsonFile, writeJsonFile } = require('../utils/fileUtils');
+const { readJsonFile, writeJsonFile } = require("../utils/fileUtils");
 
-const { v4: uuidv4 } = require('uuid');
+const { v4: uuidv4 } = require("uuid");
 
 class OrderModel {
+  static async create(orderData) {
+    const orders = await readJsonFile("orders.json");
 
-    static async create(orderData) {
+    const newOrder = {
+      id: uuidv4(),
+      ...orderData,
+      status: "pending",
+      createdAt: new Date().toISOString(),
+    };
 
-        const orders = await readJsonFile('orders.json');
+    orders.push(newOrder);
 
-        const newOrder = {id: uuidv4(),...orderData,status: 'pending',createdAt: new Date().toISOString()};
+    await writeJsonFile("orders.json", orders);
 
-        orders.push(newOrder);
-        
-        await writeJsonFile('orders.json', orders);
-        
-        return newOrder;
-    
+    return newOrder;
+  }
+
+  static async getById(id) {
+    const orders = await readJsonFile("orders.json");
+
+    return orders.find((o) => o.id === id);
+  }
+
+  static async update(id, updateData) {
+    const orders = await readJsonFile("orders.json");
+
+    const index = orders.findIndex((o) => o.id === id);
+
+    if (index === -1) {
+      return null;
     }
 
-    static async getById(id) {
+    orders[index] = { ...orders[index], ...updateData };
 
-        const orders = await readJsonFile('orders.json');
-        
-        return orders.find(o => o.id === id);
-    
-    }
+    await writeJsonFile("orders.json", orders);
 
-    static async update(id, updateData) {
+    return orders[index];
+  }
 
-        const orders = await readJsonFile('orders.json');
-        
-        const index = orders.findIndex(o => o.id === id);
-        
-        if (index === -1) {
+  static async delete(id) {
+    const orders = await readJsonFile("orders.json");
 
-            return null;
-        
-        }
-        
-        orders[index] = { ...orders[index], ...updateData };
-        
-        await writeJsonFile('orders.json', orders);
-        
-        return orders[index];
-    
-    }
+    const filteredOrders = orders.filter((o) => o.id !== id);
 
-    static async delete(id) {
+    await writeJsonFile("orders.json", filteredOrders);
+  }
 
-        const orders = await readJsonFile('orders.json');
-        
-        const filteredOrders = orders.filter(o => o.id !== id);
-        
-        await writeJsonFile('orders.json', filteredOrders);
-    
-    }
+  static async getAllByUserId(userId) {
+    const orders = await readJsonFile("orders.json");
 
-    static async getAllByUserId(userId) {
-
-        const orders = await readJsonFile('orders.json');
-
-        return orders.filter(o => o.userId === userId);
-        
-    }
-
+    return orders.filter((o) => o.userId === userId);
+  }
 }
 
 module.exports = OrderModel;
